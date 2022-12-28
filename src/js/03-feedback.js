@@ -27,9 +27,9 @@ function getTextStorage() {
     if (!saveInput) {
             return;
     }
-    
+    console.log(saveInput)
     Object.entries(saveInput).forEach(element => {
         form.elements[element].value = data[element];
     });
-}; getTextStorage();
+    }; getTextStorage();
 
