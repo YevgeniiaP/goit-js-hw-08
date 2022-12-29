@@ -22,7 +22,7 @@ function onFormSubmit(event) {
 
 
 function getTextStorage() {
-    let saveInput = localStorage.getItem(STORAGE_KEY);
+    let saveInput = JSON.parse(localStorage.getItem(STORAGE_KEY));
 
     if (!saveInput) {
             return;
